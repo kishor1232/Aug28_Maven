@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [ct]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="Module2_Fund_Test.verifytest">
+        <methods>
+          <include name="logout"/>
+          <include name="TC1"/>
+          <include name="close"/>
+          <include name="login"/>
+          <include name="openapplication"/>
+        </methods>
+      </class> <!-- Module2_Fund_Test.verifytest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="Module2_Fund_Test.quantityverify">
+        <methods>
+          <include name="TC1"/>
+          <include name="openapplication"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Module2_Fund_Test.quantityverify -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [ct] -->
